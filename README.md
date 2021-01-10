@@ -6,7 +6,7 @@
 	* [Redis](https://github.com/simonhgao/back-end-architect/blob/main/README.md#redis)
 
 ### Redis
-# * [《Redis 官方文档》](http://www.redis.cn/)
+<p>* [《Redis 官方文档》](http://www.redis.cn/)</p>
 
 * [《redis使用指导》](https://www.runoob.com/redis/redis-tutorial.html)
 * [《redis服务端详解》] TODO
