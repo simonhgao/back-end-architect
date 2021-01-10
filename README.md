@@ -3,11 +3,11 @@
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 
 * [服务端缓存](https://github.com/simonhgao/back-end-architect/master/README.md#服务端缓存)
-	* [Redis](https://github.com/simonhgao/back-end-architect/master/README.md#redis)
+	* [Redis](https://github.com/simonhgao/back-end-architect/blob/main/README.md#redis)
 
 ### Redis
 
-* [《Redis 教程》](http://www.runoob.com/redis/redis-tutorial.html)
+* [《Redis 官方文档》](http://www.runoob.com/redis/redis-tutorial.html)
 * [《redis底层原理》](https://blog.csdn.net/wcf373722432/article/details/78678504)
 	* 使用 ziplist 存储链表，ziplist是一种压缩链表，它的好处是更能节省内存空间，因为它所存储的内容都是在连续的内存区域当中的。
 	* 使用 skiplist(跳跃表)来存储有序集合对象、查找上先从高Level查起、时间复杂度和红黑树相当，实现容易，无锁、并发性好。
