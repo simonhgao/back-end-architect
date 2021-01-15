@@ -14,7 +14,7 @@
 * [《redis底层原理》](https://blog.csdn.net/wcf373722432/article/details/78678504)
 	* 使用 ziplist 存储链表，ziplist是一种压缩链表，它的好处是更能节省内存空间，因为它所存储的内容都是在连续的内存区域当中的。
 	* 使用 skiplist(跳跃表)来存储有序集合对象、查找上先从高Level查起、时间复杂度和红黑树相当，实现容易，无锁、并发性好。
-* [《Redis持久化方式》](http://doc.redisfans.com/topic/persistence.html)
+* [《Redis持久化方式》](https://github.com/simonhgao/back-end-architect/blob/main/cache/Redis/Redis%E6%8C%81%E4%B9%85%E5%8C%96.md#rdb%E7%9A%84%E7%BC%BA%E7%82%B9)
 	* RDB方式：定期备份快照，常用于灾难恢复。优点：通过fork出的进程进行备份，不影响主进程、RDB 在恢复大数据集时的速度比 AOF 的恢复速度要快。缺点：会丢数据。
 	* AOF方式：保存操作日志方式。优点：恢复时数据丢失少，缺点：文件大，回复慢。
-	* 也可以两者结合使用。
+	* 也可以两者结合使用，rdb储存稳定数据，AOF储存未快照数据。
