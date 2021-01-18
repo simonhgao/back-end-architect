@@ -1,4 +1,4 @@
-《Redis persistence 持久化》
+《Redis persistence 持久化-RDB》
 ==============
 
 ## 持久化方式
@@ -25,77 +25,65 @@ RDB持久化是通过快照的方式，在指定的时间间隔内将内存中�
 
  * 每次保存 RDB 的时候，Redis 都要 fork() 出一个子进程，并由子进程来进行实际的持久化工作。 在数据集比较庞大时， fork() 可能会非常耗时，造成服务器在某某毫秒内停止处理客户端； 如果数据集非常巨大，并且 CPU 时间非常紧张的话，那么这种停止时间甚至可能会长达整整一秒。 虽然 AOF 重写也需要进行 fork() ，但无论 AOF 重写的执行间隔有多长，数据的耐久性都不会有任何损失。
 
-#### 配置RDB快照
+#### RDB三种触发方式
+* #save命令触发方式（同步）
 ```
-################################ SNAPSHOTTING  #################################
-#
-# Save the DB on disk:
-#
-#   save <seconds> <changes>
-#
-#   Will save the DB if both the given number of seconds and the given
-#   number of write operations against the DB occurred.
-#
-#   In the example below the behaviour will be to save:
-#   after 900 sec (15 min) if at least 1 key changed
-#   after 300 sec (5 min) if at least 10 keys changed
-#   after 60 sec if at least 10000 keys changed
-#
-#   Note: you can disable saving at all commenting all the "save" lines.
-#
-#   It is also possible to remove all the previously configured save
-#   points by adding a save directive with a single empty string argument
-#   like in the following example:
-#
-#   save ""
- 
+redis> save
+OK
+```
+save执行时，会造成Redis的阻塞。所有数据操作命令都要排队等待它完成。
+文件策略：新生成一个新的临时文件，当save执行完后，用新的替换老的。
+
+* #bgsave命令触发方式（异步）
+```
+redis> bgsave
+Background saving started
+```
+客户端对Redis服务器下达bgsave命令时，Redis会fork出一个子进程进行RDB文件的生成。当RDB生成完毕后，子进程再反馈给主进程。fork子进程时也会阻塞，不过正常情况下fork过程都非常快的。
+文件策略：与save命令相同。
+
+save与bgsave对比：
+| 命令 | save | bgsave |
+| ------------- | ------------- | ------------- |
+| IO类型  | 同步  | 异步 |
+| 阻塞  | 是  | 是（发生在fork期间） |
+| 复杂度  | O(n)  | O(n) |
+| 优点  | 不消耗额外内存  | 不阻塞客户端命令 |
+| 缺点  | 阻塞客户端命令  | fork消耗额外内存 |
+
+* #规则自动触发方式
+某些条件达到时，自动生成RDB文件。
+比如我们配置如下：
+配置	seconds	changes	说明
+```
+save	900	1	900秒内改变1条数据，自动生成RDB文件
+save	300	10	300秒内改变10条数据，自动生成RDB文件
+save	60	10000	60秒内改变1万条数据，自动生成RDB文件
+```
+以上任一条件达到时，都会触发生成RDB文件。不过这种方式对RDB文件的生成频率不太好控制。如果写量大，RDB生成会很频繁。不是一种好的方式。
+修改配置文件：
+
+# 配置自动生成规则。一般不建议配置自动生成RDB文件
 save 900 1
 save 300 10
 save 60 10000
- 
-# By default Redis will stop accepting writes if RDB snapshots are enabled
-# (at least one save point) and the latest background save failed.
-# This will make the user aware (in an hard way) that data is not persisting
-# on disk properly, otherwise chances are that no one will notice and some
-# distater will happen.
-#
-# If the background saving process will start working again Redis will
-# automatically allow writes again.
-#
-# However if you have setup your proper monitoring of the Redis server
-# and persistence, you may want to disable this feature so that Redis will
-# continue to work as usually even if there are problems with disk,
-# permissions, and so forth.
+# 指定rdb文件名
+dbfilename dump-${port}.rdb
+# 指定rdb文件目录
+dir /opt/redis/data
+# bgsave发生错误，停止写入
 stop-writes-on-bgsave-error yes
- 
-# Compress string objects using LZF when dump .rdb databases?
-# For default that's set to 'yes' as it's almost always a win.
-# If you want to save some CPU in the saving child set it to 'no' but
-# the dataset will likely be bigger if you have compressible values or keys.
+# rdb文件采用压缩格式
 rdbcompression yes
- 
-# Since version 5 of RDB a CRC64 checksum is placed at the end of the file.
-# This makes the format more resistant to corruption but there is a performance
-# hit to pay (around 10%) when saving and loading RDB files, so you can disable it
-# for maximum performances.
-#
-# RDB files created with checksum disabled have a checksum of zero that will
-# tell the loading code to skip the check.
+# 对rdb文件进行校验
 rdbchecksum yes
- 
-# The filename where to dump the DB
-dbfilename dump.rdb
- 
-# The working directory.
-#
-# The DB will be written inside this directory, with the filename specified
-# above using the 'dbfilename' configuration directive.
-# 
-# The Append Only File will also be created inside this directory.
-# 
-# Note that you must specify a directory here, not a file name.
-dir /opt/redis-2.6.10/data
-```
+不容忽略的触发方式
+全量复制
+主从复制时，主会自动生成RDB文件。
+debug reload
+Redis中的debug reload提供debug级别的重启，不清空内存的一种重启，这种方式也会触发RDB文件的生成。
+shutdown
+会触发RDB文件的生成。
 
 
 #### RDB快照运作方式
@@ -113,22 +101,7 @@ Redis调用 fork() ，同时拥有父进程和子进程。
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Reference：
 * [《Redis持久化方式》](http://doc.redisfans.com/topic/persistence.html)
 * [《Redis持久化方式与RESP协议》](http://maimai.cn/article/detail?fid=1576337590&efid=OnR8bnJBc1Tj7Sibj6vilw&share_channel=2&use_rn=1)
+* [《Redis持久化方式》by 朱哥](https://segmentfault.com/a/1190000012316003)
