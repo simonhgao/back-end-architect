@@ -75,13 +75,13 @@ stop-writes-on-bgsave-error yes
 rdbcompression yes
 *对rdb文件进行校验
 rdbchecksum yes
-不容忽略的触发方式
 
-全量复制
+*不容忽略的触发方式：
+1.全量复制
 主从复制时，主会自动生成RDB文件。
-debug reload
+2.debug reload
 Redis中的debug reload提供debug级别的重启，不清空内存的一种重启，这种方式也会触发RDB文件的生成。
-shutdown
+3.shutdown
 会触发RDB文件的生成。
 ```
 
