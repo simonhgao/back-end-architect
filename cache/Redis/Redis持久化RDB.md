@@ -56,26 +56,23 @@ save与bgsave对比：
 比如我们配置如下：
 配置	seconds	changes	说明
 ```
+#### 配置自动生成规则。一般不建议配置自动生成RDB文件
 save	900	1	900秒内改变1条数据，自动生成RDB文件
 save	300	10	300秒内改变10条数据，自动生成RDB文件
 save	60	10000	60秒内改变1万条数据，自动生成RDB文件
 ```
 以上任一条件达到时，都会触发生成RDB文件。不过这种方式对RDB文件的生成频率不太好控制。如果写量大，RDB生成会很频繁。不是一种好的方式。
 修改配置文件：
-
-# 配置自动生成规则。一般不建议配置自动生成RDB文件
-save 900 1
-save 300 10
-save 60 10000
-# 指定rdb文件名
+```
+#### 指定rdb文件名
 dbfilename dump-${port}.rdb
-# 指定rdb文件目录
+#### 指定rdb文件目录
 dir /opt/redis/data
-# bgsave发生错误，停止写入
+#### bgsave发生错误，停止写入
 stop-writes-on-bgsave-error yes
-# rdb文件采用压缩格式
+#### rdb文件采用压缩格式
 rdbcompression yes
-# 对rdb文件进行校验
+#### 对rdb文件进行校验
 rdbchecksum yes
 不容忽略的触发方式
 全量复制
@@ -84,7 +81,7 @@ debug reload
 Redis中的debug reload提供debug级别的重启，不清空内存的一种重启，这种方式也会触发RDB文件的生成。
 shutdown
 会触发RDB文件的生成。
-
+```
 
 #### RDB快照运作方式
 当 Redis 需要保存 dump.rdb 文件时， 服务器执行以下操作：
