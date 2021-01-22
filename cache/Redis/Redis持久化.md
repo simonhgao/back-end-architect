@@ -92,7 +92,7 @@ Redis调用 fork() ，同时拥有父进程和子进程。
 
 
 ### 实操实验
-* [三种触发方式](https://segmentfault.com/a/1190000012316003)
+[三种触发方式](https://segmentfault.com/a/1190000012316003)
 
 
 
