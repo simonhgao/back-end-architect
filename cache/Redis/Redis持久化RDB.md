@@ -34,7 +34,7 @@ OK
 save执行时，会造成Redis的阻塞。所有数据操作命令都要排队等待它完成。
 文件策略：新生成一个新的临时文件，当save执行完后，用新的替换老的。
 
-* #bgsave命令触发方式（异步）
+#### * bgsave命令触发方式（异步）
 ```
 redis> bgsave
 Background saving started
@@ -51,30 +51,31 @@ save与bgsave对比：
 | 优点  | 不消耗额外内存  | 不阻塞客户端命令 |
 | 缺点  | 阻塞客户端命令  | fork消耗额外内存 |
 
-* #规则自动触发方式
+#### * 规则自动触发方式
 某些条件达到时，自动生成RDB文件。
 比如我们配置如下：
 配置	seconds	changes	说明
 ```
-#### 配置自动生成规则。一般不建议配置自动生成RDB文件
+配置自动生成规则。一般不建议配置自动生成RDB文件
 save	900	1	900秒内改变1条数据，自动生成RDB文件
 save	300	10	300秒内改变10条数据，自动生成RDB文件
 save	60	10000	60秒内改变1万条数据，自动生成RDB文件
 ```
 以上任一条件达到时，都会触发生成RDB文件。不过这种方式对RDB文件的生成频率不太好控制。如果写量大，RDB生成会很频繁。不是一种好的方式。
-修改配置文件：
+#### 修改配置文件方法：
 ```
-#### 指定rdb文件名
+*指定rdb文件名
 dbfilename dump-${port}.rdb
-#### 指定rdb文件目录
+*指定rdb文件目录
 dir /opt/redis/data
-#### bgsave发生错误，停止写入
+*bgsave发生错误，停止写入
 stop-writes-on-bgsave-error yes
-#### rdb文件采用压缩格式
+*rdb文件采用压缩格式
 rdbcompression yes
-#### 对rdb文件进行校验
+*对rdb文件进行校验
 rdbchecksum yes
 不容忽略的触发方式
+
 全量复制
 主从复制时，主会自动生成RDB文件。
 debug reload
