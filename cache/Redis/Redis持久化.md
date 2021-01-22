@@ -7,10 +7,13 @@
 你甚至可以关闭持久化功能，让数据只在服务器运行时存在。
 
 
-## RDB
+## Redis Database File(RDB)
 * [RDB详解](https://github.com/simonhgao/back-end-architect/blob/main/cache/Redis/Redis%20Database%20File(RDB).md) 
-	* RDB方式：定期备份快照，常用于灾难恢复。优点：通过fork出的进程进行备份，不影响主进程、RDB 在恢复大数据集时的速度比 AOF 的恢复速度要快。缺点：会丢数据。
+RDB方式：定期备份快照，常用于灾难恢复。优点：通过fork出的进程进行备份，不影响主进程、RDB 在恢复大数据集时的速度比 AOF 的恢复速度要快。缺点：会丢数据。
 
+## AOF
+* [AOF详解](https://github.com/simonhgao/back-end-architect/blob/main/cache/Redis/Append%20Only%20File(AOF).md) 
+AOF方式：保存操作日志方式。优点：恢复时数据丢失少，缺点：文件大，回复慢
 
 
 
