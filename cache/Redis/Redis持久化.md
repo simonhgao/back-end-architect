@@ -15,6 +15,9 @@ RDB方式：定期备份快照，常用于灾难恢复。优点：通过fork出�
 * [AOF详解](https://github.com/simonhgao/back-end-architect/blob/main/cache/Redis/Append%20Only%20File(AOF).md) 
 AOF方式：保存操作日志方式。优点：恢复时数据丢失少，缺点：文件大，回复慢
 
+### 同时开启RDB以及AOF
+* [BOTH详解](https://github.com/simonhgao/back-end-architect/blob/main/cache/Redis/both.md) 
+
 
 
 
@@ -23,3 +26,4 @@ Reference：
 * [《Redis持久化方式》](http://doc.redisfans.com/topic/persistence.html)
 * [《Redis持久化方式与RESP协议》](http://maimai.cn/article/detail?fid=1576337590&efid=OnR8bnJBc1Tj7Sibj6vilw&share_channel=2&use_rn=1)
 * [《Redis持久化方式》by 朱哥](https://segmentfault.com/a/1190000012316003)
+* [《Redis高可用方案》](https://dbaplus.cn/news-158-2149-1.html)
