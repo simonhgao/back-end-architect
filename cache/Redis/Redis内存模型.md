@@ -17,7 +17,7 @@ Redis是目前最火爆的内存数据库之一，通过在内存中读写数据
 
 `info memory`
 
-![image](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327000947752-2103814952.png)
+![image](https://github.com/simonhgao/back-end-architect/blob/main/photo/1174710-20180327000947752-2103814952.png)
 
 其中，info命令可以显示redis服务器的许多信息，包括服务器基本信息、CPU、内存、持久化、客户端连接信息等等；memory是参数，表示只显示内存相关的信息。
 
