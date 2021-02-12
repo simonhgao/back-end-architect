@@ -5,6 +5,7 @@
 * [服务端缓存](https://github.com/simonhgao/back-end-architect/master/README.md#服务端缓存)
 	* [Redis](https://github.com/simonhgao/back-end-architect/blob/main/README.md#redis)
 
+## 服务器缓存（cache）
 ### Redis
 [《Redis 官方文档》](http://www.redis.cn/)
 
