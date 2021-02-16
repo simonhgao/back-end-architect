@@ -17,7 +17,7 @@ Redis是目前最火爆的内存数据库之一，通过在内存中读写数据
 
 `info memory`
 
-![image](https://github.com/simonhgao/back-end-architect/blob/main/photo/1174710-20180327000947752-2103814952.png)
+![image](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327000947752-2103814952.png)
 
 其中，info命令可以显示redis服务器的许多信息，包括服务器基本信息、CPU、内存、持久化、客户端连接信息等等；memory是参数，表示只显示内存相关的信息。
 
@@ -200,7 +200,7 @@ Redis在存储对象时，一律使用SDS代替C字符串。例如set hello worl
 
 Redis各种对象类型支持的内部编码如下图所示(图中版本是Redis3.0，Redis后面版本中又增加了内部编码，略过不提；本章所介绍的内部编码都是基于3.0的)：
 
-![image](
+![image](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327001358239-1304238510.png)
 
 图片来源：《Redis设计与实现》
 
@@ -220,7 +220,7 @@ embstr：<=39字节的字符串。embstr与raw都使用redisObject和sds保存�
 raw：大于39个字节的字符串
 示例如下图所示：
 
-![image](
+![image](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327001417703-15851809.png)
 
 embstr和raw进行区分的长度，是39；是因为redisObject的长度是16字节，sds的长度是9+字符串长度；因此当字符串长度是39时，embstr的长度正好是16+9+39=64，jemalloc正好可以分配64字节的内存单元。
 
@@ -229,7 +229,7 @@ embstr和raw进行区分的长度，是39；是因为redisObject的长度是16�
 
 而对于embstr，由于其实现是只读的，因此在对embstr对象进行修改时，都会先转化为raw再进行修改，因此，只要是修改embstr对象，修改后的对象一定是raw的，无论是否达到了39个字节。示例如下图所示：
 
-![image](
+![image](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327001426651-1225081171.png)
 
 2、列表
 （1）概况
@@ -240,7 +240,7 @@ embstr和raw进行区分的长度，是39；是因为redisObject的长度是16�
 
 双端链表：由一个list结构和多个listNode结构组成；典型结构如下图所示：
 
-![image](
+![image](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327001435577-242733744.png）
 
 图片来源：《Redis设计与实现》
 
