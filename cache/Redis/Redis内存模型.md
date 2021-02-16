@@ -90,7 +90,9 @@ Redis在编译时便会指定内存分配器；内存分配器可以是 libc 、
 jemalloc作为Redis的默认内存分配器，在减小内存碎片方面做的相对比较好。jemalloc在64位系统中，将内存空间划分为小、大、巨大三个范围；每个范围内又划分了许多小的内存块单位；当Redis存储数据时，会选择大小最合适的内存块进行存储。
 
 jemalloc划分的内存单元如下图所示：
+
 ![imgae](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327001126509-2023165562.png)
+
 图片来源：http://blog.csdn.net/zhengpeitao/article/details/76573053
 
 例如，如果需要存储大小为130字节的对象，jemalloc会将其放入160字节的内存单元中。
@@ -179,6 +181,7 @@ struct sdshdr {
 其中，buf表示字节数组，用来存储字符串；len表示buf已使用的长度，free表示buf未使用的长度。下面是两个例子。
 
 ![image](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327001325561-890602831.png)
+
 图片来源：《Redis设计与实现》
 
 通过SDS的结构可以看出，buf数组的长度=free+len+1（其中1表示字符串结尾的空字符）；所以，一个SDS结构占据的空间为：free所占长度+len所占长度+ buf数组的长度=4+4+free+len+1=free+len+9。
