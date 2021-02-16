@@ -67,7 +67,9 @@ Redis主进程本身运行肯定需要占用内存，如代码、常量池等等
 关于Redis数据存储的细节，涉及到内存分配器（如jemalloc）、简单动态字符串（SDS）、5种对象类型及内部编码、redisObject。在讲述具体内容之前，先说明一下这几个概念之间的关系。
 
 下图是执行set hello world时，所涉及到的数据模型。
+
 ![image](https://images2018.cnblogs.com/blog/1174710/201803/1174710-20180327001055927-1896197804.png)
+
 图片来源：https://searchdatabase.techtarget.com.cn/7-20218/
 
 （1）dictEntry：Redis是Key-Value数据库，因此对每个键值对都会有一个dictEntry，里面存储了指向Key和Value的指针；next指向下一个dictEntry，与本Key-Value无关。
