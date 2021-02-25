@@ -12,6 +12,7 @@
 * [《redis使用指导》](https://www.runoob.com/redis/redis-tutorial.html)
 * [《redis客户端详解》](TODO)
 * [《redis服务端详解》](TODO)
+* [《redis内存估算》](http://www.redis.cn/redis_memory/)
 * [《redis底层原理》](https://www.cnblogs.com/kismetv/p/8654978.html)
 	* 使用 ziplist 存储链表，ziplist是一种压缩链表，它的好处是更能节省内存空间，因为它所存储的内容都是在连续的内存区域当中的。
 	* 使用 skiplist(跳跃表)来存储有序集合对象、查找上先从高Level查起、时间复杂度和红黑树相当，实现容易，无锁、并发性好。
