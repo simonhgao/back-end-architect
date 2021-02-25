@@ -12,7 +12,8 @@
 * [《redis使用指导》](https://www.runoob.com/redis/redis-tutorial.html)
 * [《redis客户端详解》](TODO)
 * [《redis服务端详解》](TODO)
-* [《redis内存估算》](http://www.redis.cn/redis_memory/)
+* [《redis内存估算方案》](https://searchdatabase.techtarget.com.cn/7-20218/), [《redis内存预算工具》](http://www.redis.cn/redis_memory/)
+	* string类型的内存大小 = 键值个数 * (dictEntry大小 + redisObject大小 + 包含key的sds大小 + 包含value的sds大小) + bucket个数 * 4 （bucket（桶）：table的每一项称为bucket，bucket指向具有相同索引值的键值对链表）
 * [《redis底层原理》](https://www.cnblogs.com/kismetv/p/8654978.html)
 	* 使用 ziplist 存储链表，ziplist是一种压缩链表，它的好处是更能节省内存空间，因为它所存储的内容都是在连续的内存区域当中的。
 	* 使用 skiplist(跳跃表)来存储有序集合对象、查找上先从高Level查起、时间复杂度和红黑树相当，实现容易，无锁、并发性好。
