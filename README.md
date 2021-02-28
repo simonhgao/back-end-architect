@@ -2,7 +2,7 @@
 =======
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 
-* [服务端缓存](https://github.com/simonhgao/back-end-architect/master/README.md#服务端缓存)
+* [缓存](https://github.com/simonhgao/back-end-architect/master/README.md#服务端缓存)
 	* [本地缓存](https://github.com/simonhgao/back-end-architect/blob/main/README.md#本地缓存)
 	* [Redis](https://github.com/simonhgao/back-end-architect/blob/main/README.md#redis)
 
