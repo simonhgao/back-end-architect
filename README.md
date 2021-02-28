@@ -3,6 +3,7 @@
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 
 * [服务端缓存](https://github.com/simonhgao/back-end-architect/master/README.md#服务端缓存)
+	* [本地缓存](https://github.com/simonhgao/back-end-architect/blob/main/README.md#本地缓存)
 	* [Redis](https://github.com/simonhgao/back-end-architect/blob/main/README.md#redis)
 
 ## 服务器缓存（cache）
@@ -11,6 +12,51 @@
 	FIFO：First In First Out，先进先出。判断被存储的时间，离目前最远的数据优先被淘汰。
 	LRU：Least Recently Used，最近最少使用。判断最近被使用的时间，目前最远的数据优先被淘汰。
 	LFU：Least Frequently Used，最不经常使用。在一段时间内，数据被使用次数最少的，优先被淘汰。
+
+### 本地缓存
+* [《HashMap本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4211.html)
+
+* [《EhCache本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4212-ehcache.html)
+	* 堆内、堆外、磁盘三级缓存。
+	* 可按照缓存空间容量进行设置。
+	* 按照时间、次数等过期策略。
+
+* [《Guava Cache》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4213-guava-cache.html)
+	* 简单轻量、无堆外、磁盘缓存。
+
+
+* [《Nginx本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/422-fu-wu-duan-ben-di-huan-cun/nginx-ben-di-huan-cun.html)
+
+* [《Pagespeed—懒人工具，服务器端加速》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/422-fu-wu-duan-ben-di-huan-cun/4222-pagespeed.html)
+
+## 客户端缓存
+
+* [《浏览器端缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/423-ke-hu-duan-huan-cun.html)
+	* 主要是利用 Cache-Control 参数。
+
+* [《H5 和移动端 WebView 缓存机制解析与实战》](https://mp.weixin.qq.com/s/qHm_dJBhVbv0pJs8Crp77w)
+
+## 服务端缓存
+
+### Web缓存
+
+* [nuster](https://github.com/jiangwenyuan/nuster) - nuster cache
+* [varnish](https://github.com/varnishcache/varnish-cache) - varnish cache
+* [squid](https://github.com/squid-cache/squid) - squid cache
+
+### Memcached
+* [《Memcached 教程》](http://www.runoob.com/Memcached/Memcached-tutorial.html)
+* [《深入理解Memcached原理》](https://blog.csdn.net/chenleixing/article/details/47035453)
+	* 采用多路复用技术提高并发性。
+	* slab分配算法： memcached给Slab分配内存空间，默认是1MB。分配给Slab之后 把slab的切分成大小相同的chunk，Chunk是用于缓存记录的内存空间，Chunk 的大小默认按照1.25倍的速度递增。好处是不会频繁申请内存，提高IO效率，坏处是会有一定的内存浪费。
+* [《Memcached软件工作原理》](https://www.jianshu.com/p/36e5cd400580)
+* [《Memcache技术分享：介绍、使用、存储、算法、优化、命中率》](http://zhihuzeye.com/archives/2361)
+
+* [《memcache 中 add 、 set 、replace 的区别》](https://blog.csdn.net/liu251890347/article/details/37690045)
+	* 区别在于当key存在还是不存在时，返回值是true和false的。
+
+* [**《memcached全面剖析》**](https://pan.baidu.com/s/1qX00Lti?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=)
+
 ### Redis
 [《Redis 官方文档》](http://www.redis.cn/)
 
