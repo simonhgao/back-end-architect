@@ -13,36 +13,11 @@
 	LRU：Least Recently Used，最近最少使用。判断最近被使用的时间，目前最远的数据优先被淘汰。
 	LFU：Least Frequently Used，最不经常使用。在一段时间内，数据被使用次数最少的，优先被淘汰。
 
-### 本地缓存
-* [《HashMap本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4211.html)
-
-* [《EhCache本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4212-ehcache.html)
-	* 堆内、堆外、磁盘三级缓存。
-	* 可按照缓存空间容量进行设置。
-	* 按照时间、次数等过期策略。
-
-* [《Guava Cache》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/421-ying-yong-ceng-ben-di-huan-cun/4213-guava-cache.html)
-	* 简单轻量、无堆外、磁盘缓存。
-
-
-* [《Nginx本地缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/422-fu-wu-duan-ben-di-huan-cun/nginx-ben-di-huan-cun.html)
-
-* [《Pagespeed—懒人工具，服务器端加速》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/422-fu-wu-duan-ben-di-huan-cun/4222-pagespeed.html)
-
-## 客户端缓存
-
-* [《浏览器端缓存》](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/42-xing-neng-zhi-ben-di-huan-cun/423-ke-hu-duan-huan-cun.html)
-	* 主要是利用 Cache-Control 参数。
-
-* [《H5 和移动端 WebView 缓存机制解析与实战》](https://mp.weixin.qq.com/s/qHm_dJBhVbv0pJs8Crp77w)
+## 本地缓存
+* [《go-cache》](https://juejin.cn/post/6844903967139299336)
+* [《BigCache》](https://pandaychen.github.io/2020/03/03/BIGCACHE-ANALYSIS/)
 
 ## 服务端缓存
-
-### Web缓存
-
-* [nuster](https://github.com/jiangwenyuan/nuster) - nuster cache
-* [varnish](https://github.com/varnishcache/varnish-cache) - varnish cache
-* [squid](https://github.com/squid-cache/squid) - squid cache
 
 ### Memcached
 * [《Memcached 教程》](http://www.runoob.com/Memcached/Memcached-tutorial.html)
@@ -69,5 +44,6 @@
 	* 使用 ziplist 存储链表，ziplist是一种压缩链表，它的好处是更能节省内存空间，因为它所存储的内容都是在连续的内存区域当中的。
 	* 使用 skiplist(跳跃表)来存储有序集合对象、查找上先从高Level查起、时间复杂度和红黑树相当，实现容易，无锁、并发性好。
 * [《Redis持久化方式》](https://github.com/simonhgao/back-end-architect/blob/main/cache/Redis/Redis%E6%8C%81%E4%B9%85%E5%8C%96.md)
+* [《redis缓存失效策略》](https://www.cnblogs.com/dudu2mama/p/11366292.html)
 
 	* rdb储存稳定数据，AOF储存未快照数据，也可以两者结合使用。
