@@ -20,6 +20,8 @@
 	* 交换与路由： arp、 arping、 vconfig、 route
 	* 防火墙： iptables、 ipset
 	* 域名： host、 nslookup、 dig、 whois
+	* 抓包：[tcpdump](https://mozillazg.com/2018/01/tcpdump-common-useful-examples-cookbook.html)
+		* 常用命令： sudo tcpdump -iany port 10000 -Xnlps0 
 ### 构成
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
 
