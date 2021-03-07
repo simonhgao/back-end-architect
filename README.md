@@ -20,6 +20,8 @@
 	* 交换与路由： arp、 arping、 vconfig、 route
 	* 防火墙： iptables、 ipset
 	* 域名： host、 nslookup、 dig、 whois
+### 构成
+* [《NAT》](https://www.jianshu.com/p/62028875d53e)
 
 
 ## 缓存（cache）
