@@ -13,6 +13,13 @@
 ## 网络(Internet)
 ### Linux 命令
 * [《linux常用命令》](https://juejin.cn/post/6844903844267180039)
+	* 网络配置： ifconfig、 ip  
+	* 连通性探测： ping、 traceroute、 telnet、 mtr
+	* 网络连接： netstat、 ss、 nc、 lsof
+	* 流量统计： ifstat、 sar、 iftop
+	* 交换与路由： arp、 arping、 vconfig、 route
+	* 防火墙： iptables、 ipset
+	* 域名： host、 nslookup、 dig、 whois
 
 
 ## 缓存（cache）
