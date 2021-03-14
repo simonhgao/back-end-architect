@@ -2,9 +2,9 @@
 =======
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 
-* [网络](https://github.com/simonhgao/back-end-architect/master/README.md#网络)
+* [网络](https://github.com/simonhgao/back-end-architect/blob/master/README.md#网络)
 
-* [缓存](https://github.com/simonhgao/back-end-architect/master/README.md#缓存)
+* [缓存](https://github.com/simonhgao/back-end-architect/blob/master/README.md#缓存)
 	* [本地缓存](https://github.com/simonhgao/back-end-architect/blob/main/README.md#本地缓存)
 	* [Memcached](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Memcached)
 	* [Redis](https://github.com/simonhgao/back-end-architect/blob/main/README.md#redis)
