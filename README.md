@@ -2,15 +2,15 @@
 =======
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 
-* [网络](https://github.com/simonhgao/back-end-architect/master/README.md#网络(Internet))
+* [网络](https://github.com/simonhgao/back-end-architect/master/README.md#网络)
 
-* [缓存](https://github.com/simonhgao/back-end-architect/master/README.md#缓存（cache）)
+* [缓存](https://github.com/simonhgao/back-end-architect/master/README.md#缓存)
 	* [本地缓存](https://github.com/simonhgao/back-end-architect/blob/main/README.md#本地缓存)
 	* [Memcached](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Memcached)
 	* [Redis](https://github.com/simonhgao/back-end-architect/blob/main/README.md#redis)
 
 
-## 网络(Internet)
+## 网络
 ### Linux 命令
 * [《linux常用命令》](https://juejin.cn/post/6844903844267180039)
 	* 网络配置： ifconfig、 ip  
@@ -26,7 +26,7 @@
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
 
 
-## 缓存（cache）
+## 缓存
 #### 缓存失效策略
 	当缓存需要被清理时（比如空间占用已经接近临界值了），需要使用某种淘汰算法来决定清理掉哪些数据。常用的淘汰算法有下面几种：
 	FIFO：First In First Out，先进先出。判断被存储的时间，离目前最远的数据优先被淘汰。
