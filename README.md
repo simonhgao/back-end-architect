@@ -26,6 +26,7 @@
 	* 域名： host、 nslookup、 dig、 whois
 	* 抓包：[tcpdump](https://mozillazg.com/2018/01/tcpdump-common-useful-examples-cookbook.html)
 		* 常用命令： sudo tcpdump -iany port 10000 -Xnlps0 
+	* 文件查看：[lsof](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html) 
 ### 构成
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
 
