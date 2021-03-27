@@ -2,6 +2,10 @@
 =======
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 
+* [数据结构](https://github.com/simonhgao/back-end-architect/blob/master/README.md#数据结构)
+ 	* [array](https://github.com/simonhgao/back-end-architect/blob/main/README.md#array)
+ 	
+
 * [网络](https://github.com/simonhgao/back-end-architect/blob/master/README.md#网络)
  	* [Linux 命令](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Linux命令)
  	* [构成](https://github.com/simonhgao/back-end-architect/blob/main/README.md#构成)
@@ -14,6 +18,14 @@
 	* [本地缓存](https://github.com/simonhgao/back-end-architect/blob/main/README.md#本地缓存)
 	* [Memcached](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Memcached)
 	* [Redis](https://github.com/simonhgao/back-end-architect/blob/main/README.md#redis)
+
+
+
+
+## 数据结构
+### array
+* [《golang数组》](https://studygolang.com/articles/1177)
+
 
 
 ## 网络
