@@ -26,7 +26,7 @@
 ## #数据结构
 
 ### array
-* [《golang数组》](https://studygolang.com/articles/1177)：[leetcode]（https://github.com/simonhgao/back-end-architect/blob/main/leetcode/array.md）
+* [《golang数组》](https://studygolang.com/articles/1177)：[leetcode](https://github.com/simonhgao/back-end-architect/blob/main/leetcode/array.md)
 
 
 
