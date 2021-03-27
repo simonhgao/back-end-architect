@@ -3,7 +3,7 @@
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 
 * [网络](https://github.com/simonhgao/back-end-architect/blob/master/README.md#网络)
- 	* [Linux 命令](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Linux 命令)
+ 	* [Linux 命令](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Linux命令)
  	* [构成](https://github.com/simonhgao/back-end-architect/blob/main/README.m#构成)
  	* [序列化(二进制协议)](https://github.com/simonhgao/back-end-architect/blob/main/README.m#序列化二进制协议)
 
@@ -17,7 +17,7 @@
 
 
 ## 网络
-### Linux 命令
+### Linux命令
 * [《linux常用命令》](https://juejin.cn/post/6844903844267180039)
 	* 网络配置： ifconfig、 ip  
 	* 连通性探测： ping、 traceroute、 telnet、 mtr
