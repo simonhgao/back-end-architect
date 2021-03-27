@@ -4,6 +4,8 @@
 
 * [网络](https://github.com/simonhgao/back-end-architect/blob/master/README.md#网络)
  	* [Linux 命令](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Linux 命令)
+ 	* [构成](https://github.com/simonhgao/back-end-architect/blob/main/README.m#构成)
+ 	* [序列化(二进制协议)](https://github.com/simonhgao/back-end-architect/blob/main/README.m#序列化二进制协议)
 
 * [云技术](https://github.com/simonhgao/back-end-architect/blob/master/README.md#云技术)
  	* [Docker](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Docker)
@@ -30,6 +32,10 @@
 		* [删除文件问题](https://juejin.cn/post/6844904084764377101)
 ### 构成
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
+
+### 序列化二进制协议
+* [《Protobuf》](https://studygolang.com/articles/28427)
+
 
 
 
