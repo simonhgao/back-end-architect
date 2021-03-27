@@ -22,13 +22,17 @@
 
 
 
+
 ## 数据结构
+
 ### array
 * [《golang数组》](https://studygolang.com/articles/1177)
 
 
 
+
 ## 网络
+
 ### Linux命令
 * [《linux常用命令》](https://juejin.cn/post/6844903844267180039)
 	* 网络配置： ifconfig、 ip  
@@ -44,7 +48,6 @@
 		* [删除文件问题](https://juejin.cn/post/6844904084764377101)
 ### 构成
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
-
 ### 序列化二进制协议
 * [《Protobuf》](https://studygolang.com/articles/28427)
 
@@ -52,20 +55,21 @@
 
 
 ## 云技术
+
 ### Docker
 * [《Docker Tutorial》](https://juejin.cn/post/6844903713115488269)
-
-
 ## 缓存
 #### -缓存失效策略
 	当缓存需要被清理时（比如空间占用已经接近临界值了），需要使用某种淘汰算法来决定清理掉哪些数据。常用的淘汰算法有下面几种：
 	FIFO：First In First Out，先进先出。判断被存储的时间，离目前最远的数据优先被淘汰。
 	LRU：Least Recently Used，最近最少使用。判断最近被使用的时间，目前最远的数据优先被淘汰。
 	LFU：Least Frequently Used，最不经常使用。在一段时间内，数据被使用次数最少的，优先被淘汰。
-
 ### 本地缓存
 * [《go-cache》](https://juejin.cn/post/6844903967139299336)
 * [《BigCache》](https://pandaychen.github.io/2020/03/03/BIGCACHE-ANALYSIS/)
+
+
+
 
 ### 服务端缓存
 
@@ -81,7 +85,6 @@
 	* 区别在于当key存在还是不存在时，返回值是true和false的。
 
 * [**《memcached全面剖析》**](https://pan.baidu.com/s/1qX00Lti?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=)
-
 #### -Redis
 [《Redis 官方文档》](http://www.redis.cn/)
 
