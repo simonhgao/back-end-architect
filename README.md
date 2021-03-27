@@ -2,7 +2,7 @@
 =======
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 
-* [数据结构](https://github.com/simonhgao/back-end-architect/blob/master/README.md#数据结构)
+* [数据结构](https://github.com/simonhgao/back-end-architect/blob/master/README.md##数据结构)
  	* [array](https://github.com/simonhgao/back-end-architect/blob/main/README.md#array)
  	
 
