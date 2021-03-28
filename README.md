@@ -45,6 +45,7 @@
 
 ### 进阶类
 #### tree
+	* [《Binary search tree》](https://blog.csdn.net/John_xyz/article/details/79622219)
 
 
 ## #网络
