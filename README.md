@@ -5,6 +5,7 @@
 
 * [数据结构](https://github.com/simonhgao/back-end-architect/blob/master/README.md#数据结构)
  	* [array](https://github.com/simonhgao/back-end-architect/blob/main/README.md#array)
+ 	* [tree](https://github.com/simonhgao/back-end-architect/blob/main/README.md#tree)
  	
 
 * [网络](https://github.com/simonhgao/back-end-architect/blob/master/README.md#网络)
@@ -26,10 +27,18 @@
 
 ## #数据结构
 
-### array
-* [《golang数组》](https://studygolang.com/articles/1177)：[leetcode](https://github.com/simonhgao/back-end-architect/blob/main/leetcode/array.md)
+### 基础类
+#### array
+* [《golang数组》](https://studygolang.com/articles/1177)
+* [leetcode](https://github.com/simonhgao/back-end-architect/blob/main/leetcode/array.md)
+#### slice
+* [《golang slice》](https://blog.go-zh.org/go-slices-usage-and-internals)
+* [《slice 的坑》](https://studygolang.com/articles/6557)
 
 
+
+### 进阶类
+#### tree
 
 
 ## #网络
