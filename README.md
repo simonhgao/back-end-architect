@@ -34,7 +34,13 @@
 #### slice
 * [《golang slice》](https://blog.go-zh.org/go-slices-usage-and-internals)
 * [《slice 的坑》](https://studygolang.com/articles/6557)
-
+* [《slice 并发不安全及解决办法》](https://zhuanlan.zhihu.com/p/42006586)
+* [《slice 并发不安全及解决办法2》](https://juejin.cn/post/6844904134592692231)
+#### map
+* [《golang map》](https://cloud.tencent.com/developer/article/1468799)
+* [《golang map 加锁》](https://www.jianshu.com/p/10a998089486)
+* [《golang sync map 并发安全1》](https://juejin.cn/post/6844903808460390408)
+* [《golang sync map 并发安全1》](https://blog.csdn.net/u010230794/article/details/82143179)
 
 
 ### 进阶类
