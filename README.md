@@ -7,9 +7,11 @@
  	* [array](https://github.com/simonhgao/back-end-architect/blob/main/README.md#array)
  	* [tree](https://github.com/simonhgao/back-end-architect/blob/main/README.md#tree)
  	
+* [goroutine](https://github.com/simonhgao/back-end-architect/blob/master/README.md#goroutine)
+
 
 * [网络](https://github.com/simonhgao/back-end-architect/blob/master/README.md#网络)
- 	* [Linux 命令](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Linux命令)
+ 	* [Linux 命令](https://github.com/simonhgao/back-end-architect/blob/main/README.md#Linux命令
  	* [构成](https://github.com/simonhgao/back-end-architect/blob/main/README.md#构成)
  	* [序列化(二进制协议)](https://github.com/simonhgao/back-end-architect/blob/main/README.md#序列化二进制协议)
 
@@ -23,9 +25,10 @@
 
 * [源码包学习](https://github.com/simonhgao/back-end-architect/blob/master/README.md#源码包学习)
 	
-	
 
-### 基础类
+## #数据结构
+
+### -基础类
 #### array
 * [《golang数组》](https://studygolang.com/articles/1177)
 * [leetcode](https://github.com/simonhgao/back-end-architect/blob/main/leetcode/array.md)
@@ -41,9 +44,13 @@
 * [《golang sync map 并发安全1》](https://blog.csdn.net/u010230794/article/details/82143179)
 
 
-### 进阶类
+### -进阶类
 #### tree
 * [《Binary search tree》](https://blog.csdn.net/John_xyz/article/details/79622219)
+
+
+## #goroutine
+* [《Go 中的并发》](https://juejin.cn/post/6953632279085776903)
 
 
 ## #网络
