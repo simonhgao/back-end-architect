@@ -32,7 +32,7 @@
 
 ## #数据结构
 
-### -基础类
+### 基础类
 #### array
 * [《golang数组》](https://studygolang.com/articles/1177)
 * [leetcode](https://github.com/simonhgao/back-end-architect/blob/main/leetcode/array.md)
@@ -48,7 +48,7 @@
 * [《golang sync map 并发安全1》](https://blog.csdn.net/u010230794/article/details/82143179)
 
 
-### -进阶类
+### 进阶类
 #### tree
 * [《Binary search tree》](https://blog.csdn.net/John_xyz/article/details/79622219)
 
@@ -85,7 +85,7 @@
 ### Docker
 * [《Docker Tutorial》](https://juejin.cn/post/6844903713115488269)
 ## 缓存
-#### -缓存失效策略
+#### 缓存失效策略
 	当缓存需要被清理时（比如空间占用已经接近临界值了），需要使用某种淘汰算法来决定清理掉哪些数据。常用的淘汰算法有下面几种：
 	FIFO：First In First Out，先进先出。判断被存储的时间，离目前最远的数据优先被淘汰。
 	LRU：Least Recently Used，最近最少使用。判断最近被使用的时间，目前最远的数据优先被淘汰。
@@ -95,9 +95,9 @@
 * [《BigCache》](https://pandaychen.github.io/2020/03/03/BIGCACHE-ANALYSIS/)
 
 
-### #服务端缓存
+### 服务端缓存
 
-#### -Memcached
+#### Memcached
 * [《Memcached 教程》](http://www.runoob.com/Memcached/Memcached-tutorial.html)
 * [《深入理解Memcached原理》](https://blog.csdn.net/chenleixing/article/details/47035453)
 	* 采用多路复用技术提高并发性。
@@ -109,7 +109,7 @@
 	* 区别在于当key存在还是不存在时，返回值是true和false的。
 
 * [**《memcached全面剖析》**](https://pan.baidu.com/s/1qX00Lti?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=)
-#### -Redis
+#### Redis
 [《Redis 官方文档》](http://www.redis.cn/)
 
 * [《redis使用指导》](https://www.runoob.com/redis/redis-tutorial.html)
