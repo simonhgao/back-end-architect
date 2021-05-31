@@ -5,6 +5,9 @@
 
 * [数据结构](https://github.com/simonhgao/back-end-architect/blob/master/README.md#数据结构)
  	* [array](https://github.com/simonhgao/back-end-architect/blob/main/README.md#array)
+ 	* [slice](https://github.com/simonhgao/back-end-architect/blob/main/README.md#slice)
+ 	* [map](https://github.com/simonhgao/back-end-architect/blob/main/README.md#map)
+ 	* [string](https://github.com/simonhgao/back-end-architect/blob/main/README.md#string)
  	* [tree](https://github.com/simonhgao/back-end-architect/blob/main/README.md#tree)
  	
 * [goroutine](https://github.com/simonhgao/back-end-architect/blob/master/README.md#goroutine)
@@ -30,7 +33,7 @@
 
 
 
-## #数据结构
+## #Go基础知识
 
 ### 基础类
 #### array
