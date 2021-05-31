@@ -46,6 +46,10 @@
 * [《golang map 加锁》](https://www.jianshu.com/p/10a998089486)
 * [《golang sync map 并发安全1》](https://juejin.cn/post/6844903808460390408)
 * [《golang sync map 并发安全1》](https://blog.csdn.net/u010230794/article/details/82143179)
+#### string
+* [Unicode， ASCii 等字符解析的历史以及细节](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+* [string的底层设计](https://juejin.cn/post/6844904114745245709)
+* [Golang中[]byte与string转换全解析](
 
 
 ### 进阶类
