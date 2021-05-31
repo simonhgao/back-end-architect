@@ -3,14 +3,13 @@
 [![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
 <img src="https://img.shields.io/badge/language-Golang-26C2F0.svg">
 
-* [数据结构](https://github.com/simonhgao/back-end-architect/blob/master/README.md#数据结构)
+* [Go基础知识](https://github.com/simonhgao/back-end-architect/blob/master/README.md#Go基础知识)
  	* [array](https://github.com/simonhgao/back-end-architect/blob/main/README.md#array)
  	* [slice](https://github.com/simonhgao/back-end-architect/blob/main/README.md#slice)
  	* [map](https://github.com/simonhgao/back-end-architect/blob/main/README.md#map)
  	* [string](https://github.com/simonhgao/back-end-architect/blob/main/README.md#string)
  	* [tree](https://github.com/simonhgao/back-end-architect/blob/main/README.md#tree)
- 	
-* [goroutine](https://github.com/simonhgao/back-end-architect/blob/master/README.md#goroutine)
+ 	* [goroutine](https://github.com/simonhgao/back-end-architect/blob/master/README.md#goroutine)
 
 
 * [网络](https://github.com/simonhgao/back-end-architect/blob/master/README.md#网络)
@@ -58,9 +57,7 @@
 ### 进阶类
 #### tree
 * [《Binary search tree》](https://blog.csdn.net/John_xyz/article/details/79622219)
-
-
-## #goroutine
+#### goroutine
 * [《Go 中的并发》](https://juejin.cn/post/6953632279085776903)
 
 
