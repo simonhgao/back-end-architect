@@ -77,7 +77,10 @@
 		* 常用命令： sudo tcpdump -iany port 10000 -Xnlps0 
 	* 文件查看：[lsof](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html) 
 		* [删除文件问题](https://juejin.cn/post/6844904084764377101)
-### 构成
+### 网络协议
+https://www.jianshu.com/p/a6d086a3997d
+* [《HTTP》](https://www.jianshu.com/p/a6d086a3997d)
+### 网络结构
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
 ### 序列化二进制协议
 * [《Protobuf》](https://studygolang.com/articles/28427)
