@@ -52,6 +52,8 @@
 * [Unicode， ASCii 等字符解析的历史以及细节](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 * [string的底层设计](https://juejin.cn/post/6844904114745245709)
 * [Golang中[]byte与string转换全解析](https://zhuanlan.zhihu.com/p/270626496)
+#### channel
+* [《深入浅出—聊一聊 channel》](https://juejin.cn/post/7000998172373811207)
 
 
 ### 进阶类
