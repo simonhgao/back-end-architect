@@ -78,8 +78,10 @@
 	* 文件查看：[lsof](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html) 
 		* [删除文件问题](https://juejin.cn/post/6844904084764377101)
 ### 网络协议
-https://www.jianshu.com/p/a6d086a3997d
-* [《HTTP》](https://www.jianshu.com/p/a6d086a3997d)
+* [《网络基本知识》](https://www.huaweicloud.com/articles/ea449353083b2f83855e721b941553ef.html)	
+	应用层
+	* [《HTTP》](https://www.jianshu.com/p/a6d086a3997d)
+
 ### 网络结构
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
 ### 序列化二进制协议
