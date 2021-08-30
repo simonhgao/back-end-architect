@@ -82,6 +82,7 @@
 #### 应用层
 * [《HTTP》](https://www.jianshu.com/p/a6d086a3997d)
 * [《HTTPS》](https://blog.csdn.net/guolin_blog/article/details/104546558)
+* [《TLS(HTTPS)》](https://segmentfault.com/a/1190000021559557)
 
 ### 网络结构
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
