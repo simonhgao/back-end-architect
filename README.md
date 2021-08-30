@@ -81,6 +81,7 @@
 * [《网络基本知识》](https://www.huaweicloud.com/articles/ea449353083b2f83855e721b941553ef.html)	
 #### 应用层
 * [《HTTP》](https://www.jianshu.com/p/a6d086a3997d)
+* [《HTTPS》](https://blog.csdn.net/guolin_blog/article/details/104546558)
 
 ### 网络结构
 * [《NAT》](https://www.jianshu.com/p/62028875d53e)
