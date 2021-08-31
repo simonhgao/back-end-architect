@@ -90,6 +90,7 @@
 
 #### 传输层
 * [《TCP/IP》](https://blog.csdn.net/weixin_41947378/article/details/107164853)
+	* [《三次握手以及四次挥手的必要性》](https://juejin.cn/post/6844903913611591688) 
 * [《拥塞控制》](https://zhuanlan.zhihu.com/p/37379780)
 * [《ARP协议》](https://juejin.cn/post/6844903666445451272):IP 地址到MAC 地址的映射
 * [《ICMP协议》](https://www.linuxidc.com/Linux/2018-09/154369.htm):ICMP的一个典型应用是Ping。
