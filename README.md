@@ -146,5 +146,11 @@
 	* rdb储存稳定数据，AOF储存未快照数据，也可以两者结合使用。
 
 
+
+
+### #存储
+#### ClickHouse
+* [《ClickHouse基础知识》](https://zhuanlan.zhihu.com/p/359924260)
+
 ### #源码包学习
 * [《flag》](http://blog.studygolang.com/2013/02/%E6%A0%87%E5%87%86%E5%BA%93-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90flag/)
