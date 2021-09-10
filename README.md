@@ -165,3 +165,25 @@
 
 ### #源码包学习
 * [《flag》](http://blog.studygolang.com/2013/02/%E6%A0%87%E5%87%86%E5%BA%93-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90flag/)
+
+
+==========
+书单：
+
+计算机系统基础：
+- 《深入理解计算机系统》https://book.douban.com/subject/26912767/
+
+编码能力：
+
+- 《编写可读代码的艺术》https://book.douban.com/subject/10797189/
+- 《程序设计实践》https://book.douban.com/subject/1173548/
+- 《代码整洁之道》https://book.douban.com/subject/4199741/
+- 《重构》https://book.douban.com/subject/4262627/
+- 《代码大全》第二版 https://book.douban.com/subject/1477390/
+
+语言：
+
+Go：
+- 《Effective Go》https://github.com/bingohuang/effective-go-zh-en
+- 《深入解析Go》https://tiancaiamao.gitbooks.io/go-internals/content/zh/
+- 《Go 语言设计与实现》https://draveness.me/golang/
