@@ -38,10 +38,9 @@
 
 - 基础类
 	
-    	- array
-        	- [《golang数组》](https://studygolang.com/articles/1177)
+	- array
+		- [《golang数组》](https://studygolang.com/articles/1177)
         	- [leetcode](https://github.com/simonhgao/back-end-architect/blob/main/leetcode/array.md)
-	
 	- slice
 		- [《golang slice》](https://blog.go-zh.org/go-slices-usage-and-internals)
 		- [《slice 的坑》](https://studygolang.com/articles/6557)
