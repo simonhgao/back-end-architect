@@ -40,20 +40,24 @@
     	- array
         	- [《golang数组》](https://studygolang.com/articles/1177)
         	- [leetcode](https://github.com/simonhgao/back-end-architect/blob/main/leetcode/array.md)
+	
 	- slice
 		- [《golang slice》](https://blog.go-zh.org/go-slices-usage-and-internals)
 		- [《slice 的坑》](https://studygolang.com/articles/6557)
 		- [《slice 并发不安全及解决办法》](https://zhuanlan.zhihu.com/p/42006586)
 		- [《slice 并发不安全及解决办法2》](https://juejin.cn/post/6844904134592692231)
+	
     	- map
 		- [《golang map》](https://cloud.tencent.com/developer/article/1468799)
 		- [《golang map 加锁》](https://www.jianshu.com/p/10a998089486)
 		- [《golang sync map 并发安全1》](https://juejin.cn/post/6844903808460390408)
 		- [《golang sync map 并发安全1》](https://blog.csdn.net/u010230794/article/details/82143179)
+	
     	- string
 		- [Unicode， ASCii 等字符解析的历史以及细节](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 		- [string的底层设计](https://juejin.cn/post/6844904114745245709)
 		- [Golang中[]byte与string转换全解析](https://zhuanlan.zhihu.com/p/270626496)
+	
     	- channel
 		- [《深入浅出—聊一聊 channel》](https://juejin.cn/post/7000998172373811207)
 
@@ -61,6 +65,7 @@
 - 进阶类
     - tree
 	- [《Binary search tree》](https://blog.csdn.net/John_xyz/article/details/79622219)
+	
     - goroutine
 	- [《Go 中的并发》](https://juejin.cn/post/6953632279085776903)
 
@@ -81,8 +86,10 @@
 		- 常用命令： sudo tcpdump -iany port 10000 -Xnlps0 
 	- 文件查看：[lsof](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html) 
 		- [删除文件问题](https://juejin.cn/post/6844904084764377101)
+	
 - 网络协议
 	- [《网络基本知识》](https://www.huaweicloud.com/articles/ea449353083b2f83855e721b941553ef.html)
+	
 - 应用层
 	- [《HTTP》](https://www.jianshu.com/p/a6d086a3997d)
 	- [《HTTPS》](https://blog.csdn.net/guolin_blog/article/details/104546558)
