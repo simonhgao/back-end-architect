@@ -3,6 +3,7 @@
 
 <p align="center">
 	[![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
+	<a href="#知识共享协议"><img src="https://img.shields.io/github/license/simonhgao/back-end-architect" alt="Apache"></a>
 	<img src="https://img.shields.io/badge/language-Golang-26C2F0.svg">
 </p>
 
