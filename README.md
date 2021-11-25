@@ -1,7 +1,10 @@
 《后端架构师技术图谱》(Golang)
 =======
-[![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
-<img src="https://img.shields.io/badge/language-Golang-26C2F0.svg">
+
+<p align="center">
+	[![知识共享协议](https://img.shields.io/github/license/simonhgao/back-end-architect)](https://github.com/simonhgao/back-end-architect/blob/main/LICENSE)
+	<img src="https://img.shields.io/badge/language-Golang-26C2F0.svg">
+</p>
 
 * [Go基础知识](https://github.com/simonhgao/back-end-architect/blob/master/README.md#Go基础知识)
  	* [array](https://github.com/simonhgao/back-end-architect/blob/main/README.md#array)
